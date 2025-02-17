@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 
 const AdicionarMembro = () => {
     return(
@@ -13,4 +13,4 @@ const AdicionarMembro = () => {
     )
 }
 
-export default AdicionarMembro
+export default AdicionarMembro;

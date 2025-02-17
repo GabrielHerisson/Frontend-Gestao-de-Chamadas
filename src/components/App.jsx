@@ -13,18 +13,18 @@ import MudarProfessor from "./MudarPofessor.jsx";
 function App() {
     return (
         <>
-            <BrowserRouter>
+             <BrowserRouter>
                 <Row>
                     <Col>
                         <Menu/>
                     </Col>
                     <Col className={"conteudo-principal"}>
                         <Routes>
-                            <Route exact path="/" element={<Turmas/>}/>
-                            <Route exact path="list" element={<AdicionarMembro/>}/>
-                            <Route exact path="/" element={<RemoverMembro/>}/>
-                            <Route exact path="/" element={<MudarProfessor/>}/>
-                            <Route exact path="/" element={<CriarTurma/>}/>
+                            <Route exact path="/turmas" element={<Turmas/>}/>
+                            <Route exact path="/membro/adicionar" element={<AdicionarMembro/>}/>
+                            <Route exact path="/removerMembro" element={<RemoverMembro/>}/>
+                            <Route exact path="/mudarProfessor" element={<MudarProfessor/>}/>
+                            <Route exact path="/turmas/criar" element={<CriarTurma/>}/>
 
 
                         </Routes>

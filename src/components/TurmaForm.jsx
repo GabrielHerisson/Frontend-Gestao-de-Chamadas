@@ -4,6 +4,7 @@ import MembroAPI from "../api/MembroAPI";
 import MembroAPI from "../api/MembroAPI";
 import { Button, Container, Form, FormGroup, FormLabel, Row } from "react-bootstrap";
 import AdicionarMembro from "./AdicionarMembro";
+import TurmaAPI from "../api/TurmaAPI";
 
 
 
@@ -31,7 +32,7 @@ function TurmaForm({id}){
         if(id){
             console.log("Consultar membro por id");
             const MembroAPI = new MembroAPI();
-            MembroAPI.getMembro(setMembro, id);
+            TurmaAPI.getMembro(setMembro, id);
         }
     }, [id]);
 

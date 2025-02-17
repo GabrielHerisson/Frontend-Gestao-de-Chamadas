@@ -6,6 +6,8 @@ import "./Turmas.css"
 import RemoverMembro from "./RemoverMembro.jsx";
 import MembroAPI from "../api/MembroAPI.js"
 
+import { Link } from "react-router";
+
 function Turmas() {
 
     const [show, setShow] = useState(false);
@@ -15,7 +17,7 @@ function Turmas() {
 
     function handleExluir(){
         setShow(false);
-        MembroAPI.RemoverMembro(idDelete);
+        //MembroAPI.RemoverMembro(idDelete);
         console.log(`Exluido o membro id: ${idDelete}`);
     }
 

@@ -9,13 +9,14 @@ import MudarProfessor from './MudarPofessor.jsx'
 import RemoverMembro from './RemoverMembro.jsx'
 import { createBrowserRouter } from 'react-router-dom'
 
+/*
 const router = createBrowserRouter([
     {
         path: "/",
         element: <AdicionarMembro />
     },
     {
-        path: "/",
+        path: "/CriarTurma",
         element: <CriarTurma />
     },
     {
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
     },
     
 ])
+    */
 //     <RouterProvider router={router} />
 createRoot(document.getElementById('root')).render(
     <StrictMode>
