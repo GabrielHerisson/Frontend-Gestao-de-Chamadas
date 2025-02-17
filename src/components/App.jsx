@@ -21,12 +21,10 @@ function App() {
                     <Col className={"conteudo-principal"}>
                         <Routes>
                             <Route exact path="/" element={<Turmas/>}/>
-                            <Route exact path="list" element={<AdicionarMembro/>}/>
-                            <Route exact path="/" element={<RemoverMembro/>}/>
-                            <Route exact path="/" element={<MudarProfessor/>}/>
-                            <Route exact path="/" element={<CriarTurma/>}/>
-
-
+                            <Route exact path="/adicionar-membro" element={<AdicionarMembro/>}/>
+                            <Route exact path="/remover-membro" element={<RemoverMembro/>}/>
+                            <Route exact path="/mudar-professor" element={<MudarProfessor/>}/>
+                            <Route exact path="/criar-turma" element={<CriarTurma/>}/>
                         </Routes>
                     </Col>
                 </Row>
