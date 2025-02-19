@@ -1,16 +1,37 @@
 import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const AdicionarMembro = () => {
     return(
-        <>
-            <Link to={"/"}>Home</Link> / <Link to={"components/AdicionarMembro"}>Membro</Link> / Adicionar Membro
+        
+        <div>
+            <link rel="stylesheet" href="AdicionarMembro.css"></link>
+            <h1>Adicionar Membro</h1>
+            <div class="divBox">
+                <label for="box">Nome </label>
+                <input type="box" />
+            </div>
+            <div class="divBox">
+                <label for="box">Sexo </label>
+                <input type="box" />
+            </div>
+            <div class="divBox">
+                <label for="box">Data de Nascimento </label>
+                <input type="box" />
+            </div>
+            <div class="divBox">
+                <label for="box">Telefone </label>
+                <input type="box" />
+            </div>
+            <div class="divBox">
+                <label for="box">Tipo </label>
+                <input type="box" />
+            </div>
+            <div class="content">
 
-            <h1> Adicionar Membro:</h1>
-            <br/>
-            <TurmaForm/>
-        </>        
+            </div>
+        </div>
     )
 }
 
-export default AdicionarMembro;
+export default AdicionarMembro

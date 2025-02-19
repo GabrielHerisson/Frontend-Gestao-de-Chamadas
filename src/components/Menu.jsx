@@ -15,10 +15,18 @@ function Menu() {
                 <Link to={`/turmas`} > 
                     <Button>Turmas</Button>
                 </Link>
-                <Link onClick={handleContact}>Adicionar Membro</Link>
-                <Link>Remover Membro</Link>
-                <Link>Mudar Professor</Link>
-                <Link>Criar Turma</Link>
+                <Link to={`/membro/adicionar`}>
+                    <Button>Adicionar Membro</Button>
+                </Link>
+                <Link to={`/removerMembro`}>
+                    <Button>Remover Membro</Button>
+                </Link>
+                <Link to={`/mudarProfessor`}>
+                    <Button>Mudar Professor</Button>
+                </Link>
+                <Link to={`/turmas/criar`}>
+                    <Button>Criar Turma</Button>
+                </Link>
             </ButtonGroup>
         </div>
   
