@@ -35,7 +35,7 @@ function AdicionarMembro () {
             <div>
                 <p>Telefone 
                     <div>
-                        <input type="tel" placeholder="Insira o telefone" />
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
                     </div>
                 </p>
             </div>
@@ -52,6 +52,7 @@ function AdicionarMembro () {
             <div>
                 <p>Adicionar novo membro? 
                     <input type="submit" value="Confirmar" />
+                    <input type="submit" value="Cancelar" />
                 </p>
             </div>
         </form>
